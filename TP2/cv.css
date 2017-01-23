@@ -1,0 +1,37 @@
+html {
+  background-color: silver;
+}
+
+li {
+  list-style-type: none;
+}
+
+#entete {
+  font-size: 20px;
+}
+#entete h3{
+  border : solid 1px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+#formation h3,#exppro h3,#competences h3, #centreinteret h3{
+  text-align: center;
+  border-bottom: solid 1px blue;
+  padding-bottom: 15px;
+}
+
+#entete ul li:first-child{
+  font-size: 30px;
+  color: blue;
+}
+#formation tr td:first-child, #exppro tr td:first-child {
+  column-width: 150px;
+}
+
+#formation ul li:first-child, #exppro ul li:first-child {
+  font-weight: bold;
+  color: blue;
+}
