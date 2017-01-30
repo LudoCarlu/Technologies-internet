@@ -1,0 +1,59 @@
+1. Expliquez les différences entre les "liens HTML" suivants:
+
+  * <a href="http://www.uqo.ca/test/page.html#tips">...</a>
+
+  * <a href="page.html#tips">...</a>
+
+  * <a href="#tips">...</a>
+
+2. Installez sur votre ordinateur un interpréteur de javascript "nodejs" - http://nodejs.org/
+
+  - Trouvez comment y exécuter un fichier javascript (fichier avec du
+    code javascript).
+
+  - Trouvez comment imprimer sur la console: en node (nodejs)
+    c'est la méthode "console.log(...)" - comme dans les navigateurs
+    Firefox et Chrome
+
+3.  Écrire une fonction "longueur(mot)" qui calcule la longueur de son
+    argument "mot". Par exemple:
+
+    <  longueur("ala");
+    >  3
+
+4.  Écrire une fonction "effacer(lettre, mot)" qui retourne le mot "mot"
+    sans la lettre "lettre". Par exemple:
+
+    <  effacer("a", "toto")
+    >  "toto"
+
+    <  effacer("o", "toto")
+    >  "tt"
+
+5.  Écrire une fonction "second(tab)" qui trouve le deuxième plus
+    petit élément dans le tableau (Array) "tab".
+
+    <  second([3, 4, 2, 1, 4]);
+    >  2
+
+6.  Écrire une fonction "compose(f,g)" qui prend comme arguments deux
+    fonctions à un argument, "f" et "g", et qui retourne leur
+    composition "f . g". Exemple:
+
+    <  (compose(Math.sqrt,Math.sqrt))(16);
+    >  2
+
+7.  Écrire les fonctions "map(f, [x1, x2, ..., xn])" qui étant donnée
+    une fonction "f" et un tableau "[x1, x2, ..., xn]", retourne le
+    tableau [f(x1), f(x2), ..., f(xn)].
+
+    <  map( function(x){ return x + 1; }, [1,2,3,4,5,6] );
+    >  2,3,4,5,6,7
+
+
+8.  Écrire une fonction "fmap([f1,f2,...,fk],x)" qui prend comme arguments un
+    tableau de fonctions et un nombre "x", et qui retourne
+    le tableau [f1(x), f2(x), ..., fk(x)].
+
+    <  fmap( [Math.sqrt,  function(x){ return x + 1; }], 4 );
+    >  2,5
