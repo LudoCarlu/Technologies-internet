@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+</head>
+
+<body>
+
+  <script>
+    function genererURL(serv, chemin, json) {
+      var result = serv;
+
+      if (!/^http:\/\//.test(result)) {
+        result = "http://" + result;
+      }
+
+      result += chemin;
+
+      var monjson = JSON.parse(json);
+
+      var tab = [];
+
+      for (var x in monjson) {
+
+        tab.push(x + "=" + escape(monjson[x]));
+      }
+
+      result += "?" + tab.join("&");
+
+      return result;
+
+    }
+
+    document.write(genererURL("w4.uqo.ca", "/calc.cgi", '{"q":"a b c","lang":"fr"}'));
+  </script>
+
+</body>
+
+</html>
